@@ -1,6 +1,6 @@
 import { UserProps } from "../types/user"
 import{MdLocationPin} from "react-icons/md"
-import classes from "./Search.module.css";
+
 import {Link} from 'react-router-dom'
 
 const User = ({
@@ -13,7 +13,7 @@ const User = ({
   return (
     <div className={classes.user}>
       
-      <img className={classes.image} src={avatar_url} alt={login} />
+      <img src={avatar_url} alt={login} />
       <h2>{login}</h2>
       {location && (<p>
         <MdLocationPin />
