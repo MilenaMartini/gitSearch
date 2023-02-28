@@ -16,7 +16,7 @@ const User = ({
     <div className={classes.user}>
       
       <img className={classes.image} src={avatar_url} alt={login} />
-      <h2 className={classes.login}>{login}</h2>
+      <h2>{login}</h2>
       {location && (<p>
         <MdLocationPin />
         <span>{location}</span>
@@ -32,11 +32,7 @@ const User = ({
           <p>{bio}</p>
         </div>
         <div>
-          <p>data Criação:</p>
-          <p>{created_at}</p>
-        </div>
-        <div>
-        <Link to={html_url}>Ver Mais</Link>
+        <Link to={url}>Ver Mais</Link>
         </div>
       </div>
     </div>

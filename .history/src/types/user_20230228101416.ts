@@ -1,9 +1,8 @@
 export type UserProps = {
   avatar_url: string,
-  html_url: string,
-  bio: string,
+  url: string
   login: string,
   location: string;
   followers: number;
-  created_at: string;
+  following: number;
 };

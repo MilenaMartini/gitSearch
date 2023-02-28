@@ -10,13 +10,14 @@ const User = ({
         login,
         location,
         followers,
-        created_at
+        created_at,
+        public_repos
 }: UserProps) => {
   return (
     <div className={classes.user}>
       
       <img className={classes.image} src={avatar_url} alt={login} />
-      <h2 className={classes.login}>{login}</h2>
+      <h2>{login}</h2>
       {location && (<p>
         <MdLocationPin />
         <span>{location}</span>

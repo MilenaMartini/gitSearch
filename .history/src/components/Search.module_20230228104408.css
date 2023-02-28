@@ -35,13 +35,12 @@
 .user{
     background-color: #2b3566;
     padding: 10px;
+    text-align: center;
     border-radius: 1rem;
   }
 
 .image{
     height: 200px;
     border-radius: 1rem;
-  }
-  .login{
-    text-align: center;
+    vertical-align: bottom;
   }

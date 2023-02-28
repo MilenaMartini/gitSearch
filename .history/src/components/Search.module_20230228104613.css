@@ -41,7 +41,5 @@
 .image{
     height: 200px;
     border-radius: 1rem;
-  }
-  .login{
-    text-align: center;
+    align-self: flex-end;
   }
