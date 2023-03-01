@@ -1,7 +1,8 @@
 import { UserProps } from "../types/user"
 import{MdLocationPin} from "react-icons/md"
-import classes from "./Search.module.css";
 import {Link} from 'react-router-dom';
+import classes from "./User.modules.css"
+
 
 
 const User = ({
@@ -14,19 +15,18 @@ const User = ({
         created_at
 }: UserProps) => {
   return (
-    <div className={classes.user}>
+    <div className={classes.User}>
       <img src={avatar_url} alt={login} />
       <h2>{login}</h2>
-      {location && (
-      <p className={classes.location}>
+      {location && (<p>
         <MdLocationPin />
         <span>{location}</span>
       </p>
       )}
-      <div className={classes.stats}>
+      <div>
         <div>
-        <p>Seguidores:</p>
-          <p className={classes.number}>{followers}</p>
+          <p>Seguidores:</p>
+          <p>{followers}</p>
         </div>
         <div>
           <p>descrição:</p>
@@ -34,9 +34,9 @@ const User = ({
         </div>
         <div>
           <p>data Criação:</p>
-          <p>{new Date(created_at).toLocaleDateString("pt-BR")}</p>
+          <p>{created_at}</p>
         </div>
-        <div className={classes.red}>
+        <div>
              <Link to={html_url}>Ver Perfil</Link>
         </div>
       </div>

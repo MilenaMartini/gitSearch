@@ -32,6 +32,7 @@ const Home = () => {
              login,
              location,
              followers,
+             following,
              created_at
             } = data
 
@@ -42,6 +43,7 @@ const Home = () => {
         login,
         location,
         followers,
+        following,
         created_at
       };
 

@@ -78,6 +78,7 @@
    }
 
    .red {
+    height 10px;
     align-items: center;
     background-color: #644aff;
     padding: 1rem;

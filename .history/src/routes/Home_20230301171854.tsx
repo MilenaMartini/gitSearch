@@ -35,6 +35,8 @@ const Home = () => {
              created_at
             } = data
 
+      const a = new Date(created_at).toLocaleDateString('pt-BR')
+console.log(a)
       const userData: UserProps = {
         avatar_url,
         html_url,
@@ -42,7 +44,7 @@ const Home = () => {
         login,
         location,
         followers,
-        created_at
+        a
       };
 
       setUser(userData);

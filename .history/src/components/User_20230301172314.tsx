@@ -34,7 +34,7 @@ const User = ({
         </div>
         <div>
           <p>data Criação:</p>
-          <p>{new Date(created_at).toLocaleDateString("pt-BR")}</p>
+          <p>{new Date(created_at).toLocaleDateString("en-US")}</p>
         </div>
         <div className={classes.red}>
              <Link to={html_url}>Ver Perfil</Link>

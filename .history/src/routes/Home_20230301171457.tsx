@@ -34,7 +34,7 @@ const Home = () => {
              followers,
              created_at
             } = data
-
+      console.log('Created:', created_at.toLocaleString('pt-BR'))
       const userData: UserProps = {
         avatar_url,
         html_url,

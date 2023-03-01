@@ -51,36 +51,9 @@
   }
 
    .location {
+
+   }
+
+   .stats {
     display: flex;
-    align-items: center;
-    gap: 0.4rem;
-
-   }
-
-   .location svg {
-    fill: #644aff;
-    font-size: 1.5rem;
-   }
-
-   .location span {
-    font-weight: bold;
-   }
-
-   .stats div {
-    padding: 0 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: .4rem;
-   }
-
-   .stats .number {
-    padding: .2rem .4rem;
-   }
-
-   .red {
-    align-items: center;
-    background-color: #644aff;
-    padding: 1rem;
-    border-radius: 5px;
-    transition: 0.3s;
    }

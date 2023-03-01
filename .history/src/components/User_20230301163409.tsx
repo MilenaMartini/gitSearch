@@ -11,6 +11,7 @@ const User = ({
         login,
         location,
         followers,
+        following,
         created_at
 }: UserProps) => {
   return (
@@ -29,14 +30,18 @@ const User = ({
           <p className={classes.number}>{followers}</p>
         </div>
         <div>
+        <p>Seguindo:</p>
+          <p className={classes.number}>{following}</p>
+        </div>
+        <div>
           <p>descrição:</p>
           <p>{bio}</p>
         </div>
         <div>
           <p>data Criação:</p>
-          <p>{new Date(created_at).toLocaleDateString("pt-BR")}</p>
+          <p>{created_at}</p>
         </div>
-        <div className={classes.red}>
+        <div>
              <Link to={html_url}>Ver Perfil</Link>
         </div>
       </div>
