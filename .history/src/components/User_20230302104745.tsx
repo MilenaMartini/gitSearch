@@ -16,11 +16,10 @@ const User = ({
         followers,
         created_at
 }: UserProps) => {
-
   date_create = new Date(created_at);
   date_now = new Date(Date.now());
-
   return (
+    
     <div className={classes.user}>
       <img src={avatar_url} alt={login} />
       <h2>{login}</h2>
@@ -40,7 +39,7 @@ const User = ({
           <p>{bio}</p>
         </div>
         <div>
-          <p>Tempo de uso:</p>
+          <p>data Criação:</p>
           <p>{date_now.getFullYear() - date_create.getFullYear()} anos, {date_create.getMonth() - date_now.getMonth()} meses </p>
         </div>
         <div className={classes.red}>

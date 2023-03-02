@@ -3,9 +3,7 @@ import{MdLocationPin} from "react-icons/md"
 import classes from "./Search.module.css";
 import {Link} from 'react-router-dom';
 
-let date_create;
-let date_now;
-
+let time;
 
 const User = ({
   avatar_url,
@@ -16,11 +14,8 @@ const User = ({
         followers,
         created_at
 }: UserProps) => {
-
-  date_create = new Date(created_at);
-  date_now = new Date(Date.now());
-
   return (
+    time = Date.parse(created_at)  - Date.UTC(Date.now)
     <div className={classes.user}>
       <img src={avatar_url} alt={login} />
       <h2>{login}</h2>
@@ -40,8 +35,8 @@ const User = ({
           <p>{bio}</p>
         </div>
         <div>
-          <p>Tempo de uso:</p>
-          <p>{date_now.getFullYear() - date_create.getFullYear()} anos, {date_create.getMonth() - date_now.getMonth()} meses </p>
+          <p>data Criação:</p>
+          <p>{new Date(created_at).toLocaleDateString("pt-BR")}</p>
         </div>
         <div className={classes.red}>
              <Link to={html_url}>Ver Perfil</Link>
