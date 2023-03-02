@@ -37,7 +37,7 @@ const User = ({
         </div>
         <div>
           <p className={classes.title}>Descrição:</p>
-          <p>{bio}</p>
+          <p className={classes.description}>{bio}</p>
         </div>
         <div>
           <p className={classes.title}>Tempo de uso:</p>

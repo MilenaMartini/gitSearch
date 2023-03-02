@@ -82,9 +82,9 @@
    }
 
    .stats .title{
-    color:#0e1129;
-    font-size: 20px;
-    font-weight: bolder;
+    color: red;
    }
 
-
+   .stats .description{
+    color: blue;
+   }

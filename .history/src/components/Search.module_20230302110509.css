@@ -81,10 +81,10 @@
     transition: 0.3s;
    }
 
-   .stats .title{
-    color:#0e1129;
-    font-size: 20px;
-    font-weight: bolder;
+   .title{
+    color: red;
    }
 
-
+   .description{
+    color: blue;
+   }

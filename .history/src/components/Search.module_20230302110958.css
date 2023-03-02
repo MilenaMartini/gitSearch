@@ -87,4 +87,6 @@
     font-weight: bolder;
    }
 
-
+   .stats .description{
+    text-align: start;
+   }

@@ -33,17 +33,17 @@ const User = ({
       <div className={classes.stats}>
         <div>
         <p className={classes.title}>Seguidores:</p>
-          <p>{followers}</p>
+          <p className={classes.number}>{followers}</p>
         </div>
         <div>
-          <p className={classes.title}>Descrição:</p>
+          <p>Descrição:</p>
           <p>{bio}</p>
         </div>
         <div>
-          <p className={classes.title}>Tempo de uso:</p>
-          <p >{date_now.getFullYear() - date_create.getFullYear()} anos, {date_create.getMonth() - date_now.getMonth()} meses </p>
+          <p>Tempo de uso:</p>
+          <p>{date_now.getFullYear() - date_create.getFullYear()} anos, {date_create.getMonth() - date_now.getMonth()} meses </p>
         </div>
-        <div className={classes.button}>
+        <div className={classes.red}>
              <Link to={html_url}>Ver Perfil</Link>
         </div>
       </div>
