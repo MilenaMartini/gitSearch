@@ -32,18 +32,19 @@ const User = ({
       )}
       <div className={classes.stats}>
         <div>
+
         <p className={classes.title}>Seguidores:</p>
-          <p>{followers}</p>
+          <p className={classes.desc}>{followers}</p>
           <br></br>
         </div>
         <div>
           <p className={classes.title}>Descrição:</p>
-          <p>{bio}</p>
+          <p className={classes.desc}>{bio}</p>
           <br></br>
         </div>
         <div>
           <p className={classes.title}>Tempo de uso:</p>
-          <p >{date_now.getFullYear() - date_create.getFullYear()} anos, {date_create.getMonth() - date_now.getMonth()} meses </p>
+          <p className={classes.desc}>{date_now.getFullYear() - date_create.getFullYear()} anos, {date_create.getMonth() - date_now.getMonth()} meses </p>
           <br></br>
         </div>
 

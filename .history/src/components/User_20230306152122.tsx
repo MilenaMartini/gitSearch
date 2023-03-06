@@ -34,7 +34,6 @@ const User = ({
         <div>
         <p className={classes.title}>Seguidores:</p>
           <p>{followers}</p>
-          <br></br>
         </div>
         <div>
           <p className={classes.title}>Descrição:</p>

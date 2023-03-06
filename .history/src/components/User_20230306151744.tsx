@@ -34,19 +34,16 @@ const User = ({
         <div>
         <p className={classes.title}>Seguidores:</p>
           <p>{followers}</p>
-          <br></br>
         </div>
         <div>
           <p className={classes.title}>Descrição:</p>
           <p>{bio}</p>
-          <br></br>
         </div>
         <div>
           <p className={classes.title}>Tempo de uso:</p>
           <p >{date_now.getFullYear() - date_create.getFullYear()} anos, {date_create.getMonth() - date_now.getMonth()} meses </p>
-          <br></br>
         </div>
-
+        <br></br>
         <div className={classes.button}>
              <Link to={html_url}>Ver Perfil</Link>
         </div>
